@@ -1,0 +1,821 @@
+6095e1f First Commit
+82e1790 Twenty Seventeen: Correct `@param` entries for `twentyseventeen_custom_colors_css` filter.
+b75023e Docs: Add missing `@param` type for `wp_cache_get_last_changed()`.
+d2a6ea3 REST API: Update unit tests to account for the string changes in [39896].
+5d83b14 Build/Test Tools: After [29858], update `.jsintrc` to use spaces, not tabs.
+2a7400c Administration: Improve tab character width in Plugins and Themes editor.
+b3c2883 REST API: Improve error messages for number relational validation.
+8603da6 Taxonomy: Add an explanation for "Parent" dropdown for hierarchical custom taxonomies.
+139a58b Twenty Seventeen: Remove extra asterisk from a translator comment so the comment could be parsed correctly.
+36cb411 Docs: In `wp_set_object_terms()`, add a note that passing an empty value as `$terms` argument will remove all related terms.
+a1319d6 Widgets: In `unregister_sidebar()`, rename the `$name` parameter to `$sidebar_id` for consistency with `is_registered_sidebar()`.
+11d81ec Media: Use a consistent error message for file type errors on uploading.
+327a11a Docs: Use a consistent description for `$plugin` parameter in various plugin API functions.
+a989f0b Docs: Improve the DocBlock for `validate_plugin()`.
+8b9a3a0 Docs: After [37083], change "HEX format" to "3- or 6-digit hexadecimal form" for clarity.
+351a3b6 Docs: Make `$meta` parameter description in multisite signup and registration functions more consistent.
+3f59be8 Users: In `wpmu_signup_blog()` and `wpmu_signup_user()`, pass unserialized signup meta data to `after_signup_site` and `after_signup_user` filters introduced in [34112], to match the documented value.
+a4f106f I18N: Move "Site Language" setting above "Timezone".
+32564f9 Themes: Use curly braces for variables inside strings in `get_page_template() to explicitly specify the end of the variable name.
+52897df Media: Fix exif_imagetype check in wp_get_image_mime
+0df85f5 Tests: Replace broken codeispoetry.png file.
+daf3589 REST API: Change which users are shown in the users endpoint.
+8eff927 Media: Improve image filetype checking.
+c9ea1de Updates: Translate plugin data on the Updates screen. Built from https://develop.svn.wordpress.org/trunk@39808
+ce7fb29 Themes: Fix markup for theme name fallbacks. Built from https://develop.svn.wordpress.org/trunk@39807
+cea9e2d Multisite: Use `wp_rand()` in signup key creation.
+061e878 Mail: Disable wp-mail.php when `mailserver_url` is mail.example.com.
+03e5c03 Add nonce for widget accessibility mode.
+5eb452d Update PHPMailer to 5.2.22.
+3fd9465 Docs: Make `@deprecated` entry for `wp_kses_js_entities()`, deprecated in [38785], consistent with other entries.
+c07571d Docs: Change `@param` type for `$user_object` in `WP_Users_List_Table::single_row()` from `object` to `WP_User` to be more accurate.
+9234feb Posts, Post Types: Use an existing string for "Invalid post type" error message.
+fd0564d Docs: Remove incorrect `@param` tags for `admin_print_footer_scripts-{$hook_suffix}` and `admin_footer-{$hook_suffix}` dynamic actiona.
+fdc2b34 Docs: Move `install_global_terms()` DocBlock after the `function_exists()` call.
+14454e3 Docs: Use correct closing tag in `submit_field` description in `comment_form()`.
+1d05544 Twenty Seventeen: Expand a changelog entry added in [39742] with the new item name.
+03c6dc1 Customize: Correct a comment in `get_theme_starter_content()` added in [39561].
+979152b Twenty Seventeen: add more details about filter and requires version
+b5908ad Twenty Seventeen: version bump and update changelog
+d054731 Docs: Add missing `@since` entry for `Walker::unset_children()`.
+6032bd6 Docs: Use 3-digit, x.x.x style semantic versioning for `@since` entries in `wp-admin/js/image-edit.js`.
+e8c65e0 Docs: Use 3-digit, x.x.x style semantic versioning for `@since` entries in `wp-admin/js/word-count.js`.
+e654c81 Docs: Add documentation for `wp-admin/js/editor.js`.
+008c1f7 Docs: Correct `@access` entries for `WP_Locale::init()` and `WP_Locale::register_globals()`.
+64675a6 Docs: Add missing `@since` entries for `WP_Theme` class methods.
+b971410 Docs: Correct `@access` entry for `WP_User::filter` property.
+ff749bc Docs: Correct `@access` entries and duplicate hook references in `WP_Customize_Selective_Refresh`.
+f6cd778 Twenty Seventeen: Correct `@param` entries for `twentyseventeen_content_width`, `twentyseventeen_custom_colors_saturation` and `twentyseventeen_social_links_icons` filters.
+2f50816 Twenty Seventeen: Correct `@param` entry for `twentyseventeen_front_page_sections` filter.
+2e81d3e Twenty Seventeen: Introduce a theme-specific filter `twentyseventeen_starter_content` for customizing the starter content array.
+93d4caa Docs: Add missing `@param` tag for `show_post_locked_dialog` filter.
+6e5d66c Docs: Move `install_network()` DocBlock after the `function_exists()` call.
+ead8c38 Docs: Add variable to `@param` entry for `whitelist_options` filter.
+9f381db Customizer: Don't query for postmeta for Custom CSS (for not-current-themes) and Customizer Changeset posts.
+577a192 Mail: In PHPMailer 5.2.7 the case of the `Send()` method changed to `send()`, update our call for consistency with the library.
+8912d6b Updates: Properly define `$filesystemForm` to handle error in modals.
+2ed703e Customize: Ensure `theme_mod`-cache of `custom_css` lookup of `-1` short-circuits a `WP_Query` from being made.
+b5dbe61 Upgrade: Fix the installation of TwentySeventeen upon upgrade from an early version.
+5468850 Customize: Update `customize.php` URL with `changeset_uuid` param the instant a change is made instead of deferring until the changeset update request responds.
+ea0f8b5 Customize: Remove extra left padding in core for site title and widgets in preview.
+a676166 Upgrade/Install: Avoid creating nonce during installation.
+952b687 Feeds: Don't override the Content-Type header inside fetc_feed()
+c8a3496 REST API: Add error handling for fetch error in `buildModelGetter` of wp-api.js.
+e2166de Always add `page-template-default` class to the editor body when the template is not specified. This matches the behavior on the front-end.
+ef882e9 Customize: Prevent removal of underline upon hover/focus for nav menu deletion links.
+7a83036 Docs: Correct the DocBlock for `get_header_video_url()`.
+64bb76d Docs: Correct `@since` and `@access` tags for `WP_Term_Query::get_terms()` and `WP_Term_Query::parse_orderby_meta()`.
+868f642 Docs: Correct `@access` tag for `WP_Customize_Partial::id_data` property.
+88d2bb0 Docs: Add missing `@since` and `@access` tags for `WP_Widget_Form_Customize_Control::to_json()` and `::render_content()`.
+625849c Docs: Add missing `@since` and `@access` tags for `WP_Date_Query::is_first_order_clause()`.
+fd78085 Docs: Correct `rest_insert_*` duplicate hook references in REST API.
+b737cce Docs: Add missing `session_token_manager` duplicate hook reference in `wp-includes/class-wp-session-tokens.php`.
+d16bdab Docs: Correct `comment_email` duplicate hook reference in `wp-admin/includes/class-wp-comments-list-table.php`.
+179a40d Docs: Add missing duplicate hook references in `wp-admin/includes/ajax-actions.php`.
+f3a9d2b I18N: Add post type context to "Featured Image" post labels.
+962db75 Posts, Post Types: Add a `@since` entry for `archives` post type label introduced in [35382].
+5eb2277 Shortcodes: Clarify the docs for `pre_do_shortcode_tag` and `do_shortcode_tag`.
+324e79a Ignore the 'comment_order' setting when determining comment pagination.
+5fc3bbb Don't double-escape `terms` payload in `WP_Tax_Query::transform_query()`.
+66551de REST API: Add missing assertions to the view and embed context response data for the Users Controller.
+5c5dbc9 General: Update copyright year to 2017 in license.txt.
+05f07e1 Updates: Show the Authentication key settings after selecting the SSH transport in both the modal, and also on the plugin/theme updates screen.
+6066654 Updates: Remove a stray `"` from a tag.
+1a40f6b Mail: Ensure that any `phpmailerException` exceptions generated by `setFrom()` are caught to avoid PHP Fatal errors.
+25e462d Taxonomy: Redirect to current taxonomy when adding a term without AJAX.
+c6f8182 REST API: Merge similiar error message strings in the Terms Controller.
+158f302 REST API: Add the `supports` property to the Post Type response object.
+24767c7 Upgrade PHPMailer from 5.2.14 to 5.2.21.
+4efebd4 Filesystem: Add `return` statement to `WP_Filesystem_ftpsockets->rmdir`
+df256f9 REST API: Remove errant annotation from `test_get_items_pagination_headers()` method.
+82c7fd2 Comments: Fix placement of the `wp_update_comment_data` filter to safeguard filtered data from triggering a database error.
+80a839d Docs: Misc corrections and additions to inline documentation.
+d327c92 Docs: Add and correct `@since` docs for a variety of functions and methods.
+a3ea7ea Taxonomy: Eliminate redundant and inaccurate dupe check when creating categories from post.php.
+af885f4 Query: Improve documentation for `orderby=relevance` in `WP_Query`.
+7a8e17d Twenty Seventeen: Fix incorrect `$content_width` value in theme
+443bcb0 Tests: Restore the database connection earlier when switching test groups.
+3ef4185 Taxonomy: Ensure that mods to query vars in `pre_term_query` callbacks have an effect.
+4177e37 Twenty Seventeen: Hardens the logic for calling featured image in `header.php`
+7d70dab Twenty Seventeen: Ensure functions in `customize-controls.js` don't count on Customizer sections always being present
+f7ba137 Customize: Fix visible edit shortcuts for `wp_nav_menu()` instances using the `menu` arg (such as in the Custom Menu widget) instead of the `theme_location` arg.
+5b39869 REST API: Improve the `rest_*_collection_params` filter docs and fix the terms filter.
+d515e20 REST API: Fix PHP warnings when `get_theme_support( 'post-formats' )` is not an array.
+c7988f1 Editor: Let the Add New link disappear in DFW mode.
+7ad554f Twenty Seventeen: Improves code readability and code standards in files
+efb191c Media: Allow PDF fallbacks filter to process custom sizes.
+15ddaa2 Customize: Bump `wp_custom_css_cb` from running at `wp_head` priority 11 to 101 to ensure Custom CSS overrides other CSS.
+1d342fc Feeds: Replace the RSS2 `lastBuildDate` date field with the `r` date specifier.
+f794939 Feeds: Do not translate the `lastBuildDate` field in RSS feeds.
+c92e916 Media: Move a variable definition outside of conditionals to ensure it's always available. This fixes cases where the URL to a PDF preview may be incorrectly calculated when no thumbnails were generated for the PDF (and avoids a PHP Notice at the same time).
+bc7a03a WP-API: JavaScript client - fix setup of models used by wp.api.collections objects.
+4ec102c Editor: Remove target=_blank when unchecked in the link modal.
+4548b08 General: Use interpolation instead of concatenation for all dynamic hook names.
+efa9958 Posts, Post Types: Ensure `is_page_template()` can only return true when viewing a singular post query.
+505e135 REST API: Add support for filename search in media endpoint.
+7cc41e4 REST API: Allow sending an empty or no-op comment update.
+7d9b5b1 Libraries: Update zxcvbn from version 1.0 to 4.4.1
+d7ab7fd REST API: Do not include the `password` argument when getting media items
+0b599cc REST API: Do not error on empty JSON body
+aa64412 Taxonomy: Use `get_term_link()` instead of `get_category_link()` in `get_term_parents_list()`.
+20aa5d7 General: Correctly detect trailing newline when prepending.
+fbc00b3 General: Remove most uses of create_function()
+6e2d9af Tests: Use `wp_delete_user()` during teardown to delete a single site's user.
+d784b55 Multisite: Replace `is_super_admin()` with `manage_network` in `get_dashboard_url()`.
+f704fc8 Multisite: Handle capability check for removing oneself via `map_meta_cap()`.
+ee36cf9 Themes: Add missing square bracket in jQuery selector.
+c9b863f Customize: Prevent navigation in preview when clicking on child elements of preview links that have non-previewable URLs.
+5edd9b0 Remove the WordPress version number from `readme.html`.
+8a89a50 Customize: Prevent edit shortcut from losing event handler after selective refresh.
+0a349c9 PDF Images: Avoid a PHP Warning when attempting to process a file without an extension.
+883689c Taxonomy: Restore the ability to use string-based `$args` in `wp_get_object_terms()`.
+826a032 Build/Test Tools: Facilitate SVN and Git being co-located in the same directory.
+bdf6087 Bootstrap: Re-initialize any hooks added manually by `object-cache.php`. Prior to 3.1 if a object cache dropin wanted to add actions, they needed to use `$wp_filter` directly.
+c21907c Options: Prevent unnecessary SQL updates by `update_option`.
+d054b9a REST API: Allow schema sanitization_callback to be set to null to bypass fallback sanitization functions.
+9669c60 Customize: Fix ability to shift-click on placeholder/pre-saved nav menu items in preview to focus on corresponding control.
+57830bf Customize: Deprecate `page_home` nav menu item starter content in favor of `home_link`; replace usage in Twenty Seventeen.
+a366e58 Customize: Trim whitespace for URLs supplied for `external_header_video` to prevent `esc_url_raw()` from making them invalid.
+6527c24 Customize: Prevent single quotes (apostrophes) in `custom_css` values from unexpectedly causing false positives for unbalanced character validation errors.
+1b96e38 Customize: Fix inability to delete nav menus by preventing `preview` filters from being added during `customize_save` admin ajax request.
+f1c3834 Customize: Prevent scrolling `custom_css` textarea to top when pressing tab.
+5b15e8c Build/Test Tools: Remove some more randomness.
+da52557 Build/Test Tools: Reuse another fixture in the user capability tests.
+b5f7ab4 Build/Test Tools: Remove commented out tests that have existed in an unimplemented state since the dawn of the test infrastructure.
+10819d6 Accessibility: Remove inappropriate content from the Edit Categories and Edit Tags screens headings.
+9d474c8 Accessibility: Remove inappropriate content from the Edit Comments screen heading.
+c05f1dc Accessibility: Remove inappropriate content from the Network screens headings.
+97fd5ae Docs: Correct param definition for `WP_Query::query()`.
+74b6e1b Taxonomy: Introduce `get_term_parents_list()`.
+d94530e Customize: Collapse available nav menu items panel when clicking outside over preview or over existing items.
+d10cde7 Customize: Allow (optional) `url` parameter to be omitted in intercepted calls to `history.pushState()` and `history.replaceState()` in customize preview.
+592c3fc Customize: Use `esc_url_raw()` instead of `wp_json_encode()` to eliminate extraneous slashes when outputting background image URL in CSS `url()`.
+c68f1de Customize: Use selected user language for edit shortcuts in preview instead of site language.
+3a0e61e Allow apostrophes in email address during wp-login.php registration.
+76a5b4f Accessibility: Remove inappropriate content from the Menus screen heading.
+40e3032 Accessibility: Remove inappropriate content from the old Edit Media screen heading.
+2d76e0d Accessibility: Remove inappropriate content from the Widgets screen heading.
+da4cc4d Multisite: Replace `is_super_admin()` with `update_core` for update permissions.
+7238017 Multisite: Remove redundant `is_super_admin()` when checking for `edit_others_posts`.
+57c2604 Accessibility: Remove inappropriate content from the Edit User screen heading.
+2c22783 Accessibility: Remove inappropriate content from the Link Manager screens headings.
+64f6349 Accessibility: Remove inappropriate content from the Add Plugins screen heading.
+993f895 Accessibility: Remove inappropriate content from the Plugins screen heading.
+87882d0 Accessibility: Remove inappropriate content from the Users screen heading.
+710b443 Toolbar: remove some unnecessary CSS lines.
+f882fc1 Comments: Clean up unused code after [38446].
+16371b9 Users: Style the super admin message on the user editing screen as a notice, not a success message.
+042d090 Taxonomy: Correct the type for the first parameter of the `the_category` filter.
+23ac0d0 Accessibility: Improve keyboard accessibility avoiding confusing tab stops in the Media views.
+a9600d1 Accessibility: Remove inappropriate content from the Themes screen heading.
+c1f59f9 Accessibility: Remove inappropriate content from the Add Themes screen heading.
+26ef4bd Accessibility: Remove inappropriate content from the Media Library screens headings.
+ab3bca0 About page: Update video and REST API reference URLs.
+9c023fc Remove 4.7 cruft from `$_old_files`.
+3dea25b About page: Bump image versions because CDN caching.
+da48e4b About page: Resposive images and CDN media URLs.
+f336d4c About page: Imagery and beautification.
+672b8a6 Customize: Prevent infinite full refresh from occurring when selective refresh falls back for a nav menu that has items excluded from rendering via filtering.
+a5dbd53 Comments: Merge a similar string between comments.php, XML-RPC and the REST API comments controller.
+3b37903 Customize: Defer populating `post_name` for `auto-draft` posts in customized state until posts are published.
+6a3de4d Customize: Ensure `changeset_uuid` query param is removed from the `customize.php` window's location once a changeset has been published (committed) with starter content.
+97f4180 Customize: Prevent posts/pages imported via starter content from being dropped when adding post/page stubs via nav menus and the dropdown-pages control.
+c9b8a5d Customize: Ensure `textarea` for Custom CSS displays as code (in LTR) when an RTL language is active.
+f0b2b3f Default Themes: Update version numbers and readme files for 4.7 release
+6f5111d Twenty Seventeen: Fix CSS specificity problem with CSS feature query for `object-fit`
+597627f Role/Capability: Don't assign the `delete_site` capability to anyone on single site installs.
+1138339 Docs: Add inline documentation for `image-edit.js`.
+e72d3d6 Multisite: Replace `is_super_admin()` with `manage_network` for admin bar permissions.
+697f079 Comments: Merge similar strings between comments.php and the REST API comments controller.
+f3b71b4 REST API: Merge similar date strings in the revisions and comments controllers.
+87eedbd REST API: Treat any falsy value as `false` in 'rest_allow_anonymous_comments'.
+5ffc6a7 Users: Clarify the return value of `get_current_user_id()` for non-logged-in users.
+9450636 Twenty Seventeen: Improve display of video header and header image in modern browsers
+04da993 Twenty Seventeen: Add specific font stack for Thai language
+89ef3af Build/Test Tools: Correctly set up the current screen during list table tests so that they don't fail when run individually.
+0d983eb Build/Test Tools: Specify exact node version in package.json.
+0a31089 Customize: Ensure a `custom_css` post insertion gets an initial post revision.
+2747595 Docs: Update an `@since` as there will not be a 4.6.2 before 4.7.
+4408380 REST API: Register the admin_email setting in single site only.
+cafb341 REST API: Register the admin_email setting in single site only.
+d7e0ae8 REST API: Site URL setting should not be present on multisite installations.
+a5e9954 Custom CSS: Change the help link to something better for users.
+cc214a2 REST API: Capability check for editing a single term should use the singular form.
+947888d Docs: Add missing REST API-related args to `register_post_type()` and `register_taxonomy()`.
+f2a4d01 REST API: Use the correct error message when editing a single term.
+e8042cf REST API: Merge similar strings in a comments endpoint parameter description.
+605e2f4 Load: No-op `locale.php`
+623ba7e Load: Re-add `locale.php`.
+3487c1b Load: Re-add `session.php`.
+f048b66 Twenty Seventeen: Improve ARIA for the nav menu.
+a7ca4b8 Load: Re-add `class-wp-upgrader-skins.php`.
+6f1d48c Load: Re-add `class-feed.php`.
+5edaa49 Twenty Seventeen: Ensure header text color updates in Customizer preview when cleared
+179e9f2 REST API: Fix bug where comment author and author email could be an empty string when creating a comment.
+a404214 About page: Remove link tags from inside translatable strings.
+156b8ca About page: Remove emoji from translatable string.
+62129eb REST API: Fix handling of some orderby parameters for the Posts controller.
+1797ea7 REST API: Disable `DELETE` requests for users in multisite.
+08b7e8a REST API: Return a `WP_Error` if `meta` property is not an array.
+01fe6a2 Customize: Fix posts limit query arg for `WP_Query` from incorrect  `number` to `posts_per_page`.
+c354cfd About page: Don't wrap URLs with `<code>` tags.
+afc9ef5 About page: Restore the double `%` in a `printf()` call which has been removed in [39420].
+d1b2a55 Plugins: Add a `current_priority()` method to `WP_Hook`.
+36a55e7 Readme: Update recommendations to PHP 7, and to include HTTPS.
+161a41e REST API: Require the reassign parameter when deleting users.
+b3ec569 Build/Test Tools: Remove PHP 7.1 from allowed failures
+cfd1161 About page: Add strings for 4.7 and make available for translation.
+c0a9b1e Twenty Seventeen: Fix broken menu toggle in Customizer after menu items are added
+68fd3f7 Twenty Seventeen: Fix style issues with gallery image links
+853acee Twenty Seventeen: Hide front section panels on page load of Customizer.
+6995048 Twenty Seventeen: Add `.has-header-video` styles for custom color schemes.
+e2b7762 Twenty Seventeen: Better handling of custom headers when no image is set.
+71d5ba2 Customize: Reuse existing non-auto-draft posts and existing auto-draft posts in the customized state with matching slugs when applying starter content.
+5e7d9a4 Customize: Reject a changeset update when a non-future date is provided and also ensure that a published changeset always gets set to the current date/time.
+1448bfc REST API: Correct the `admin_email` setting description for single site installs.
+bfdb5f5 Twenty Seventeen: Make spacing on pages without comments consistent
+a1ec867 REST API: Fix incorrect capability check on term create.
+606c990 REST API: Fix incorrect uses of `rest_sanitize_value_from_schema()`.
+396c931 Twenty Seventeen: Make sure header text color is applied when color schemes are active.
+f63c6fd Media: Fix regression with display of small images in media library.
+d480f87 Customize: Fix handling of the nav menu item labels (titles) that match defaults (original titles) and fix the display of item type labels.
+b17e25f Twenty Seventeen: Make fixed navigation apply at correct height on front page, without header video or image
+3dc4783 Docs: Document the usage of the global `$wpdb` in `_filter_query_attachment_filenames()`.
+f5dbc86 Twenty Seventeen: Provide a background color fallback for non-webkit browsers on input styles
+d21272a Twenty Seventeen: Allow child themes to easily extend custom color patterns
+ba18343 Twenty Seventeen: Make screen reader text on scroll arrow more meaningful
+1c0e514 Options: Pass the `$passed_default` parameter to the `'default_option_{$option}` filter in `add_option()`.
+dd46ba5 Twenty Seventeen: Keep header videos from extending past footer.
+b2c65c9 Customize: Fix regression in ability to hide fields for advanced menu properties in nav menu item controls.
+b2c12e4 Customize: Fix regression in ability to create submenus for nav menus via drag and drop.
+f630dd7 REST API: Add test for creating a comment with an invalid post ID.
+b6c2f11 Twenty Seventeen: Add textdomain for starter content attachment titles.
+7288ae5 REST API: Add tests for empty or "no-op" updates.
+88a7218 WP_Hook: Re-initialize any actions added directly to `$wp_filter` by `advanced-cache.php`.
+f346a9d TinyMCE: fix the styling of notices generated by the editor UI.
+b9b0371 Customize: Fix logic for previewing the URL for `nav_menu_item` settings for terms and post type archives.
+9011477 Build/Test Tools: Add an extra `WP_Error` assertion when testing a valid user activation key. This provides a better failure message if the assertion does fail.
+b8ca8e1 Build/Test Tools: When testing the output of `wp_list_pages()`, use a known and fixed date for each post so the tests don't fail when the date changes between the beginning and end of a test.
+a1ac922 Git: Prevent untracked files from being ignored by git in bundled themes.
+471f9b3 Git: Ignore patch related files, so they can't be accidentally committed.
+ab13386 SVN: Ignore patch related files, so they can't be accidentally committed.
+844b0a5 Trunk is really 4.8-alpha now.
+6b1532f Trunk is now 4.8-alpha.
+88d2633 Post-4.7 RC1 bump.
+590ae43 WordPress 4.7 RC1.
+c662bb8 REST API: Special case the “standard” post format to always be allowed.
+0a787ca REST API: Allow unsetting a post’s password.
+a7ddf24 Docs: Add a missing changelog entry for the point where the `$tagnames` parameter was added to `get_shortcode_regex()`.
+456941a Customize: Refactor logic for updating `custom_css` posts by introducing `wp_update_custom_css_post()` function and renaming update filter.
+6f189dd REST API: Add support for comments of password-protected posts.
+a985a4d REST API: Always fire the `rest_insert_*` actions after the related object is updated or inserted.
+98e8bf7 Embeds: Correctly remove security attribute from iframes in IE 10 and IE 11.
+70fc99e Theme starter content: Add support for featured images and page templates.
+6b5d960 Customize: Clean up docs and code style for customize changes in 4.7.
+e20ded7 REST API: Make JS Client store schema in session storage.
+14654d9 REST API: Allow unsetting of page templates in update requests.
+d711f2c REST API: Update “resource” strings to use the appropriate nouns.
+68f5457 Twenty Seventeen: Ensure edit button label displays properly in other languages
+46b2ef9 Twenty Seventeen: CSS coding standards fixes.
+96960d8 Twenty Seventeen: Ensure galleries display correctly in IE11.
+0b8740d Themes: Prevent unneeded database updates in `wp_get_custom_css_post()`.
+d87fe36 REST API: Set the comment `type` to a readonly property in the schema.
+2406fe4 Plugin install: De-duplicate a conditional, introduced in [38172].
+014bb86 REST API: Update description strings to match already existing ones in the admin.
+9925a4e TinyMCE: avoid calling `editor.focus()` on loading the content in the editor. It may trigger scroll-into-view in the browser. Call the quirks fix in TinyMCE directly.
+277d4d0 Customize: Prevent selective refresh from causing infinite fallback refreshes when nav menu contains invalid items.
+3284f9a Customize: Remove iframe-specific behaviors from customize preview when previewing on frontend and not contained inside iframe.
+2328e7b I18N: In `wp_dropdown_languages()` rename the new `show_site_locale_default` argument to `show_option_site_default`.
+f5b6731 I18N: Add an additional caching layer for `_load_textdomain_just_in_time()`.
+863505c REST API: Trim trailing slashes from routes.
+ca9f71e REST API: Correctly map meta keys to field names.
+4e05ff6 REST API: Disable anonymous commenting by default.
+c2d709e I18n: Introduce more translator comments for strings that contain placeholders but don't have an accompanying translator comment.
+1b2ed70 I18N: Move the support forums URL in update-related HTTP API error messages to a separate translatable string that is already used elsewhere.
+40af377 Remove an erroneous `@TODO` introduced in [39323].
+4cf5550 I18n: Begin introducing translator comments for strings which include placeholders but no accompanying translator comment.
+5b97952 REST API: Merge two error messages for edit / update.
+9b23ccf REST API: Update error messages in `WP_REST_Comments_Controller` to use the common text for permission errors.
+3c7e232 Customize: Ensure that `WP_Customize_Manager::save_changeset_post()` returns `setting_validities` even for supplied values that are unchanged from values in changeset.
+c04452a Emoji: Update Twemoji fallback to version 2.2.2.
+224ee52 Customize: Ensure `WP_Customize_Setting::value()` returns previewed value for custom types utilizing the `customize_value_{$id_base}` filter.
+7ba9399 Twenty Seventeen: Avoid an undefined index notice after [39291].
+1c110b8 I18N: Use 'WordPress hook name' instead of 'PHP hook name' in translator comments added in [39315].
+725a04d I18N: Add translator comments for strings in `_deprecated_*()` functions.
+285a774 I18N: Remove unnecessary `__()` calls in `_rotate_image_resource()` and `_flip_image_resource()`.
+4811484 REST API: Merge some more permission error strings missed in [39309].
+dca7d8d Text Changes: Merge strings referring to `list_users` capability.
+518fc0a I18N: Merge two 'RSS Error:' strings.
+a1f2856 REST API: After [39306], move `author_ip` argument to the correct place.
+5ded4db REST API: Merge and clarify some permission error strings.
+b1ed607 Text Changes: Merge and clarify some permission error strings in the admin.
+529e242 I18N: Merge two 'ERROR:' strings.
+4afa191 REST API: After [39302], clarify `author_ip` parameter in error message.
+0f31b1d REST API: Merge two similar permission error strings in `class-wp-rest-comments-controller.php`.
+9cb0a09 REST API: Merge two similar permission error strings.
+e12d381 Media: Allow override of PDF setup for multiple pages or DPI.
+0fdb955 REST API: On Comment create, limit the ability to set the `author_ip` value directly.
+234ae48 Autoprefixer for [39249].
+b08d989 Twenty Seventeen: Make all Codex links in DocBlocks use HTTPS
+a003a7f TinyMCE: fix automatic scroll on page load.
+0c14c16 REST API: Clarify parameters when used in error strings.
+aaf3fe7 Twenty Seventeen: Adds `background-attachment: fixed;` to devices that should support it
+a38b863 REST API: Change “ipv4” types to “ip” to support ipv6.
+81c5b03 REST API: Check read permissions on posts when viewing comments.
+bbdf00c Twenty Seventeen: Rename the starter content menus to match the menu area names.
+0f4d6f9 REST API: Add test case for `users/me` endpoint that the `context` param defaults to `view`.
+3f6131c REST API: Remove the `karma` property and query parameter from the Comments endpoints.
+7d96057 Twenty Seventeen: Ensure the use of proper image size for custom header image
+191e085 REST API: On comment create, return an error if the `type` property is set to anything other than `comment`.
+ccb4c7c REST API: Allow `parent` property to be explicitly set to `0` when creating or updating a Post.
+735fa34 REST API: On comment create, return an error if the `post` parameter does not relate to a valid WP_Post object.
+10bddfa REST API: On comment create, fallback to the `user_agent` header value.
+000cd0c Twenty Seventeen: Remove some extraneous function calls.
+560e93e Customize: Remove obsolete edit shortcut style rules from Twenty Seventeen.
+32b3a7f TinyMCE: remove extra space in tooltip.
+9bc6aa1 Taxonomy: Update `register_taxonomy` hook to use `WP_Taxonomy` object.
+79b3576 TinyMCE views: fix Firefox issues.
+2fadd7a Docs: Use 3-digit, x.x.x style semantic versioning for `@since 4.7.0` entries.
+480501c Taxonomy: Prevent `wp_list_categories()` from producing not well-nested output if `hide_title_if_empty` is true.
+5e88248 Twenty Seventeen: Additional default header image optimizations.
+acc30b0 Text Changes: Merge some duplicate strings with the same meaning in error messages, adjust some other strings for consistency and accuracy.
+5c86bfd Small coding standards cleanup of wp-custom-header.js.
+2cabe7a Customize: Add unit tests for importing theme starter content.
+7329283 Database: Add support for `LIKE`-escaped tables in `::get_table_from_query()`.
+bd11f7b Comments: Query used to fill comment descendants should reset 'offset' and 'number' params.
+72606be Twenty Seventeen: Add styles for custom header video controls.
+5ef714d Themes: Improve a11y and extendability of custom video headers.
+c2bc6df Customize: Ensure Close button actually closes customizer (instead of going back) after switching to a different theme inside a `customize-loader` iframe.
+4664f80 Customize: Prevent edit shortcut buttons from being inserted into container elements in the `head` or into elements which should not get interactive children.
+e4a83d2 Users: In `edit_user()` fall back to site's locale instead of `en_US` for invalid user locales.
+7db38b9 Customize: Allow URL for Codex link in Additional CSS section to be translated.
+fd2fd9e Tests: Add a missing `$message` argument for `assertEquals()` in [39265].
+b92266a REST API: After [39252] and [39264], uppercase some more 'ID' references in translatable strings.
+b20d435 Tests: Use `assertEquals()`' native functionality for delta comparison in `test_wp_convert_bytes_to_hr()`.
+ce74afd REST API: Uppercase 'ID' in endpoint descriptions and error messages for consistency with other strings.
+2f4988c Post-4.7 beta 4 bump.
+19f8905 WordPress 4.7 Beta 4.
+2d9ac64 Theme starter content: Add reference IDs for most default widgets.
+fd76120 Theme starter content: Refine the content for pages.
+74c9f82 REST API: Unify some more permission error messages.
+a7af7c8 Text Changes: Unify permission error messages in `wp-admin/users.php`.
+07cf16f REST API: Unify permission error messages.
+d4603ec Theme starter content: Add more social link items to select from.
+8485582 Theme starter content: Revamp the credits widget into an about widget.
+ec0043c I18N: Remove `<code>` tags from translatable strings in `wp-includes/class-wp-customize-manager.php`.
+a45e419 Text Changes: Unify permission error message in `wp-ajax-response.js`.
+9c2ea0b REST API: Remove two duplicate strings, use the ones we already have.
+cc14606 REST API: Unify permission error messages.
+d049f72 REST API: Clean up argument and property types.
+19bb9c2 Customize: More visible focus and hover states for close and back buttons.
+984ef62 Twenty Seventeen: Compress the default header image.
+dff34d5 Accessibility: Improve the Post Attributes meta box fields labels.
+36ac728 Media: Make PDF preview sizes filterable.
+65fb745 REST API: After [39238] and [39239], move the remaining translator comments to preceding line.
+a800e65 Docs: Apply documentation standards to the new `get_available_languages` filter.
+0113910 Customize: Ensure  edit shortcuts have same background color regardless of theme colors.
+31d4be0 Customize: Add `!important` `line-height` to edit shortcut buttons.
+8efc416 Customize: Allow starter content to apply in a new theme when switching from another theme containing changes.
+11998b4 Themes: Remove front page restriction from video header functions.
+0f5a44e REST API: Move translator comments to preceding line.
+705f17c REST API: Add translator comments to text with placeholders.
+de0835d Customize: Only show video header controls if previewing front page; show explanatory notice when controls are hidden.
+21248ce Posts, Post Types: Improve sanitisation of templates' post types.
+fc1255a I18N: Add the `get_available_languages` filter.
+8e6753c Customize: Use video-specific labels for buttons in Header Video media control.
+a69d66b Customize: Adjust layout for edit shortcuts only when shown.
+56723c6 Twenty Seventeen: Fix for mobile menu parent items requiring double tap
+79cabf6 Theme starter content: Add context to all strings.
+c3dc173 I18N: Don't use `get_available_languages()` in `_load_textdomain_just_in_time()`.
+9daebf0 Customize: Maximize height of Custom CSS `textarea` without causing doubled scrollbars.
+05a9259 Customize: Improve styles for hover, focus, and active states on edit shortcuts.
+dfbcdae Customize: Use selective refresh for custom header changes when possible.
+9ef40ce Twenty Fourteen: Removes video header support
+9e110f8 Twenty Seventeen: Resolves focused controls hidden by the top menu.
+1c2343e Twenty Seventeen: Fixes custom header text color issues
+a4fa8c5 REST API: Make all collection params filterable.
+5c90d9e REST API: Validate and Sanitize registered meta based off the schema.
+b6e848e Twenty Seventeen: Make sure theme JavaScript follows proper coding standards
+f5cdba1 Twenty Seventeen: Make custom header preview match front end in Customizer when changed
+6566473 REST API: Improve validation for usernames and passwords.
+c3f31ce Customize: Remove root panel description text which notes that edit shortcuts can be toggled by clicking anywhere in the preview.
+0c2b137 TinyMCE: fix black outline around `_moz_abspos`. This is added in Firefox in paragraphs inserted after a non-editable block.
+126c7e4 Twenty Seventeen: Adds numbers to the table of contents in `style.css`
+d902f1f Twenty Seventeen: Fix Customizer preview display issues in IE9
+fd16607 Customize: Prevent the "Hide Controls" button label from overrunning the device preview buttons.
+81f9cc2 Media: Clearly indicate that PDF thumbnails are just document previews.
+35a0240 WP_HTTP: Map internal Requests hooks to WordPress actions. This change introduces a `requests-{$hook}` action which can be used to hook into Requests hooks, and restores the `http_api_curl` action.
+dd04111 Updates: Allow background updates to update multiple plugins/themes in the same request. Due to the `clear_update_cache` parameter not being respected, update caches were being cleared incorrectly which prevented multiple plugins to be updated at the same time in background updates - failing with a `fs_unavailable` error message.
+5f7bbe6 Posts, Post Types: Fix Quick Edit to correctly set the page template for non-hierarchical post types.
+e5b82c2 Customize: Improve extensibility of Custom CSS.
+fe01b8b Twenty Seventeen: Fix typos in font family translator comment
+1b5ffcd Twenty Seventeen: Update screen-reader-text to reset word-wrap
+41cf4e1 Twenty Seventeen: Keyboard navigation on Safari 10 fix
+956818f Customize: Rename "Header Visuals" to "Header Media".
+5e8f675 TinyMCE: fix freezing the editor when wpautop is disabled and a paragraph starts with a lot of white space characters.
+788761c Multisite: Rename the `$user` parameter to `$user_login` in `wpmu_signup_blog_notification()` and `wpmu_signup_user_notification()`.
+2185609 Customize: Remove left-margin guard from edit shortcuts and adjust for small screen sizes.
+a7596d8 Post-4.7 beta 3 bump.
+d25e781 WordPress 4.7 Beta 3.
+2b81ced Customize: Prevent previewer from appearing to freeze when refreshing too fast.
+99f0a4d Twenty Seventeen: Better RTL positioning for scroll down arrow.
+1b2e28c Customize: Ensure RTL version of `customize-preview.css` is loaded.
+f325af9 REST API: Allow updating a comment without the content present.
+0e2dd4d Build/Test tools: Add "apply" as alias for "patch"
+f94285d Customize: Make "Add New Page" buttons less intrusive.
+215e535 REST API: Fix test for unfiltered_html under multisite.
+3138878 REST API: Use wp_slash rather than addslashes.
+67da428 REST API: Add `rest_base` to response objects of `wp/v2/taxonomies` and `wp/v2/types`
+e66d247 REST API: `unfiltered_html` and slashing: terms.
+7e11873 Build/Test Tools: Re-use a bunch of fixtures in test classes for user and XMLRPC tests.
+b9033ad Docs: Improve the documentation for parameters which accept `OBJECT`, `ARRAY_A`, and `ARRAY_N` as parameters.
+5cdb46c Media: Only load first PDF page for thumbnails.
+3b008dc Customize: Eliminate use of flexbox for edit shortcuts.
+ad80e08 Customize: Split out `custom_css` query logic from `wp_get_custom_css()` into a re-usable `wp_get_custom_css_post()` function to also be used when updating.
+8e3e901 Twenty Seventeen fix for Travis Error
+6c435f5 Twenty Seventeen: Fixes focused controls hidden by top menu.
+a2bbbdd REST API: Include template in all post type schemas.
+5b676af Customize: Store modifying user ID with setting change written into changeset and restore current user when setting is being saved.
+5b633c5 Customize: Prevent `post_content` and `post_name` from being modified when trashing `customize_changeset` posts.
+3a449ea Roles/Capabilities: Add meta-caps for comment, term, and user meta.
+054d2c2 Customize: Rename remaining instances `unfiltered_css` meta capability to `edit_css` in unit tests.
+4060c68 REST API: Fire correct hooks when creating users on multiste.
+fa4cbf2 Twenty Seventeen: Fix badly pixelated images on iOS devices
+08712b4 Customize: Rename `unfiltered_css` meta capability to `edit_css`; add `revisions` support to `custom_css` post type.
+cf786e5 Build/Test Tools: Utilise `assertWPError()` and `assertNotWPError()` in more places.
+11d46ae Build/Test Tools: Utilise `assertFileExists()` and `assertFileNotExists()` in more places.
+6941992 Themes: Re-use fixtures in the `wp_get_document_title()` tests.
+8ee453a Cleanup .orig file accidentally added.
+8ee1fe8 Posts, Post Types: Fix themes tests broken in [39168]
+548ac82 I18N: Add ability to change user's locale back to site's locale.
+2f7f8d5 Posts, Post Types: Fix post type templates with child themes.
+d8cbc61 Date/Time: Improve `date_i18n()` timezone tests.
+7eeab12 Docs: Notate the incoming `$theme` object members for `WP_Theme_Install_List_Table::single_row()` as a proper hash notation.
+5704743 Themes: Remove Vimeo logic from `header_video_settings()`.
+35035be Twenty Seventeen: Improve SVG markup, providing more options customization
+45d5d6d Customize: Autoprefixer for [39149].
+c15065d REST API: Remove get_allowed_query_vars() now `filter` is gone.
+8de9558 REST API: Remove rest_get_post filter and `get_post` abstraction.
+f8d6cb3 REST API: Remove more emoji from tests.
+e592f3b REST API: Embiggen the test email address.
+d6a5c68 REST API: Require 6 characters for comment email addresses.
+caabc52 REST API: Respect unfiltered_html for HTML comment fields.
+1239980 REST API: Remove ship emoji from slashing tests.
+f1975b1 REST API: Respect unfiltered_html for HTML post fields.
+8760c9a REST API: Change attachment caption & description to objects.
+25a052b Customize: Fix loading of theme screenshots in themes section and remove erroneous borders on hover.
+1d8d59a Twenty Seventeen: Fix post navigation font legibility issue
+1363813 Customize: Move Custom CSS control `placeholder` help text to setting `default` value.
+c1ff206 TinyMCE: wptextpattern: Fix inline patterns.
+5ea1e6f Customize: Allow tab characters in custom CSS input.
+68b4181 Customize: Remove Vimeo validation for external videos.
+7b3445c Accessibility: Revert [38984] as it needs to be better communicated to plugin authors.
+4c5f80c Twenty Seventeen: Fix playlists not rendering on blog/archive pages when using video or audio post format
+9f288ff Customize: For Header Image, ensure "Previously uploaded" and "Suggested" headings are hidden when lists are empty.
+8f9f755 Customize: Remove edit shortcut toggle button from preview since visibility is now linked with pane visibility.
+ec82f42 Post-4.7 beta 2 bump.
+2bbf7b5 WordPress 4.7 Beta 2.
+53c8c68 Administration: Ensure collapse menu is usable with a keyboard
+1281a28 Customize: Revert theme install feature.
+fa5b519 Editor: Correct the docblock for the `wp_default_editor` filter.
+8ec767c Customize: Ensure page/post stubs are included in listings and searches for available nav menu items.
+1a3e930 Customize: Combine Ajax requests for initial load of available nav menu items into a single request.
+f4c3b83 Customize: Use `button` with `svg` as click target instead of `:before` content, improving clickability of edit shortcuts in Firefox.
+495b2d8 Twenty Seventeen: Make sure skip link works in all versions of Internet Explorer
+abada1f I18N: In `get_user_locale()` ensure that `$user_id` isn't a falsy value before calling `get_user_by()`.
+6ccb29b Customize: No-op `edit_post_link()` when in customizer preview.
+e4b4f3e Customize: For toggling visibility of the controls pane, rename "Collapse (Sidebar)" to "Hide Controls" and "Expand Sidebar" to "Expand Controls".
+726cd04 Customize: Let edit shortcuts be persistently visible when controls pane is expanded, hidden when collapsed, and always visible in mobile preview. Remove initial flash of edit shortcuts.
+727e859 Load: Remove unused global imports in `wp_load_translations_early()`.
+0a3d034 Twenty Seventeen: Correct issues with hidden overflow and height on site header
+50b2c6c Customize: Remove Vimeo reference from description for external header videos.
+b1ee6c6 I18N: Use the user's locale when loading text domains in the admin.
+5564716 REST API: Modify the structure of our DELETE responses to be more explicit.
+557496c I18N: Move `load_textdomain()` tests to separate file.
+6c82930 Twenty Seventeen: Fix site name and description appearing off screen in some browsers
+8fa49e7 Themes: Improve support for placeholders in default headers.
+89cab4e I18N: Show "Settings saved." in the correct language after switching the site language.
+60db5df Themes: Improve reliability of URL used in `get_header_image_tag()`.
+ea5f417 Customize: Prevent collapsing expanded panel/section/control when `Esc` is pressed on another closable UI element.
+32be6f7 Bump grunt-contrib-uglify from 1.0.1 to 2.0.0
+21ddb65 Bump grunt-contrib-cssmin from v1.0.0 to v1.0.2
+c8bf15c Bump grunt-contrib-compress from 1.1.0 to 1.3.0
+8ed617a Bump autoprefixer from 6.5.0 to 6.5.1
+ffdac55 Bump grunt-contrib-qunit from 1.1.0 to 1.2.0
+985a1f6 Customize: Prevent syncing unmodified settings from controls into preview to guard against triggering an infinite reload due to selective refresh fallback behavior.
+721cf28 REST API: Only provide JSON error code on PHP 5.3+.
+63ba459 Bump grunt-sass from 1.1.0 to 1.2.1
+6b08485 REST API: Return error when JSON decoding fails.
+8c9f4f8 REST API: Return a `WP_Error` when a user does not have permission to create or update a post with the provided terms.
+37318fe Media: Sanity check array value in `wp_prepare_attachment_for_js()`.
+d544c6d REST API: Switch to stable version of JSON Schema.
+dcb12c3 REST API: Clean-up our validation callbacks and add missing array `items` properties in our endpoint schemas.
+901c4ed REST API: Support querying for multiple post statuses.
+676ae9f REST API: Use the `items` attribute for the taxonomies `types` schema property for proper sanitization/validation.
+89a70eb Themes: Remove jQuery dependency from wp-custom-header.js.
+94ab2f9 REST API: Return an error when the length of a comment field is too long.
+c0b41d8 Customize: Prevent PHP warning in applying widget starter content on fresh installs.
+ceeb8dd Plugins: Improve Ajax search of installed plugins.
+6485e5e Menus: Use a label of "Display location" for individual nav menu settings.
+5666292 REST API: Include `taxonomies` as an attribute of post types.
+37858fa REST API: Add en_US to the locales enum.
+9bc3830 Query: Add tests for `WP_Query::is_single()` and `get_body_class()` with attachments.
+40dc499 Twenty Seventeen: Unifies the labels for front page sections
+34cf5d8 REST API: Allow querying for multiple `slug` values.
+624def0 REST API: Add update and delete endpoints to /users/me
+3fef086 REST API: Set default sanitize callback if type is set.
+8627242 REST API: Add locale to user resource.
+a911bf7 REST API: Avoid default sanitization for polymorphic params.
+6f13b82 Roles: Fix a PHP error introduced in [39082].
+d7bdd72 REST API: Change method of merging parameters.
+dab566d Mail: Set a better error code when triggering `wp_mail_failed`.
+ba039f7 REST API: Remove the Location redirect for the /users/me endpoint.
+08ea664 REST API: Only expose formats supported by the current theme.
+933d5cf Docs: Add the parameter name for the `wp_roles_init` action.
+e79fa03 Roles/Capabilities: Add a new `wp_roles_init` filter.
+4b3a9de Twenty Seventeen: Fix `supportsInlineSVG()` being unnecessarily called twice
+9cf5aa4 Twenty Seventeen: Sticky icon fix to stop appearing in regular post flow
+2b611c2 Twenty Seventeen: Fixes ul inside ol being wrongly ordered.
+9510f68 Twenty Seventeen: Update page layout setting for all use cases
+feb8ccf TinyMCE: wptextpattern: Fix undo shortcut for inline patterns
+2d07c31 Only set `fresh_site` during an actual fresh install.
+84c108d TinyMCE: wptextpattern: Handle unconverted inline patterns
+5c7aa3c Editor: Correct the description of the parameter passed to the `wp_default_editor` filter.
+906eb80 Twenty Seventeen: Remove unnecessary l10n variables
+3711c06 Twenty Seventeen: Replace remaining Genericons with Font Awesome icons
+04f376e Multisite: Use `get_network()` in `WP_UnitTest_Factory_For_Network`.
+766ff15 I18N: Revert [39069] as it needs some more work.
+8bdd37f I18N: Use the user's locale when loading text domains in the admin.
+8df80ae I18N: Show available timezones in the user's locale on the settings screen.
+d7d8768 I18N: Remove unused `$wpdb` global from `get_locale()` after [39005].
+1aae56f Update link in register_meta about 4.6 changes
+69c9d92 Themes: Update the unit tests to handle [39064] and #31550.
+70b1d20 Upgrade: Install new themes upon upgrade again. This partially reverts [35738], which has shown to provide a bad user experience for users seeking to experiment with TwentySeventeen.
+0ff0dcc Plugins: Correct the `since` docs for the various `plugin_action_links` filters.
+babd79f Posts, Post Types: Prevent users from being able to delete a protected meta field from a post.
+6ee8f33 REST API: Sanitize arrays being sent as CSVs.
+1c45ae6 Customize: Ensure state query params persist in preview through calls to `history.pushState()` & `history.replaceState()`.
+4356a28 Administration: remove a leftover check from get_submit_button.
+f1591ec REST API: Add support for "integer" type for meta and options
+1dd88e3 Taxonomy: Remove redundant 'get_terms_args' filter call from `WP_Term_Query`.
+03e34ab REST API: Allow a CSV list of user roles to be passed to `/users`.
+9862543 REST API: Allow a CSV list of term IDs to be passed to `/posts`.
+33b8bb3 Docs: Clarify descriptions for `home_url()` and `get_home_url()` on the true effect of the `$scheme` parameter.
+3a02481 Docs: Fix an incorrect pseudo-parameter referenced in the hook doc for the `widget_tag_cloud_args` filter.
+568838b Docs: Update the DocBlock description for `WP_Query::is_single()` to mention that it works for any post types excluding pages.
+5f4497f Docs: Fix multiple trivial typos throughout a variety of core files.
+c7691ce Themes: Exit `wp-custom-header.js` early in browsers wihout modern events.
+9635867 Docs: The `query_vars` filter used in the REST posts controller should be notated as a duplicate rather than a new hook.
+54b378e REST API: Allow parameters defined as `array` to be sent as CSVs.
+4dab905 REST API: Support password on non-post post types.
+6c1e98d REST API: Add support for arrays in schema validation and sanitization.
+8c811f8 XML-RPC: Correctly handle empty and duplicate comments.
+dbc4b87 REST API: Allow Content-Type on CORS requests.
+b7e6c43 REST API: Correctly test the roles parameter when creating a user in `WP_Test_REST_Users_Controller`.
+69539eb REST API: Add `PATCH` to CORS allowed methods.
+d15f7b5 REST API: Delete temporary files during teardown of `WP_Test_REST_Attachments_Controller`.
+ba9b3cf I18N: Don't use `get_user_option()` for retrieving user's language.
+cf571b1 I18N: Use correct value for the `for` attribute of the user language setting label.
+015cb27 Customize: Prevent auto-draft post/page stubs from being saved with empty slugs or published with non-unique slugs.
+0181e93 Docs: Add a slightly less ambiguous list of return types for `rest_ensure_response()`.
+993b3a5 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Users_Controller` class.
+5b0d117 Role/Capability: Introduce capability tests for promoting, removing, and deleting users, and capability tests for editing comments.
+b8f14e0 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_User_Meta_Fields` class.
+90c17cc Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Terms_Controller` class.
+b71e62b Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Term_Meta_Fields` class.
+7d7d0c8 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Taxonomies_Controller` class.
+5dfa0c4 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Settings_Controller` class.
+2452f69 REST: Fix some errant `else if` conditions and add a few missing periods on inline comments.
+596ee8b Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Revisions_Controller` class.
+1ef0a55 REST: Fix a yoda condition in `WP_REST_Request::get_parameter_order()` and add a missing period for an inline comment in `WP_REST_Request::from_url().
+e84b257 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Posts_Controller` class.
+7d488bd Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Post_Types_Controller` class.
+04f0340 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Post_Statuses_Controller` class.
+c4df9d6 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Post_Meta_Fields` class.
+9ce98d9 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Meta_Fields` class.
+718f9fe Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Controller` class.
+2d0d9cf Customize: Avoid using `assertNotFalse()` in tests because it's not available in PHPUnit 3.6.
+791c72d Accessibility: Remove target=_blank from the help tab links in network.php.
+ddea523 Customize: Prevent toggling edit shortcuts when doing shift-click or when clicking on a descendent of an interactive element.
+328922c Customize: Correct the CRUD tests for custom CSS on multisite.
+2b6ceeb Customize: Correct the capability mapping and associated tests for the `unfiltered_css` capability.
+e2e47a1 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Comments_Controller` class.
+7d25657 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Comment_Meta_Fields` class.
+4247471 Tests: Helps to also update the hour and not just the timezone to temporarily fix a test broken due to Daylight Saving Time changes in Europe.
+e94d4a2 Tests: Temporarily fix a test failing due to European Daylight Saving Time changes.
+08b0407 Docs: Add much more complete and syntactically correct documentation throughout the `WP_REST_Attachments_Controller` class.
+5015bd5 Customize: Reveal controls pane when clicking on edit shortcuts in mobile preview.
+2dd904d Customize: Fix message grammar for `custom_css` validity error when imbalanced characters possibly due to `content` CSS property.
+2f7f2c6 Role/Capability: Reuse a fixture in a couple more unit tests.
+102273e XML-RPC: Fix truncated warning message added in [38883].
+fd40a16 Accessibility: Improve the form labels on the Add New User screen.
+a1d18b7 I18N: Don't initialize `WP_Locale_Switcher` in `wp_load_translations_early()`.
+67bd634 Twenty Seventeen: Fixes unexpected behaviour of scroll down arrow
+9da43bc Customize: Move Additional CSS section toward end of list by assigning priority higher than default.
+d71afc0 Customize: Mark newly-added page/post stubs as added (with checkmark) when they are inserted into the list of available items.
+ce81b7a Twenty Seventeen: Adds missing theme text domains to starter content
+42f804e Twenty Seventeen: Don't modify excerpt link in admin
+f7552bb Twenty Seventeen: Remove excessive escaping in `color-patterns.php`
+9fccac2 Twenty Seventeen: Hidden article tags on home page fix
+3807829 TinyMCE: if the current editor configuration is without toolbars, prevent errors when adding the labels for custom shortcuts.
+a8b19ca Twenty Seventeen: Fix broken and crowded pagination navigation on small screens
+529ca4d Post-4.7 beta 1 bump.
+e35ac97 Customize: Remove premature (and verbose) check of `fresh_site` option due to database not being ready on multisite.
+7343b3b WordPress 4.7 Beta 1.
+75535c5 Customize: Introduce starter content and site freshness state.
+60eb1dd REST API: Revert [38980].
+f9f6dd7 Customizer: Fix name of a partial in `export_header_video_settings()`
+69c8c4e Twenty Seventeen: Make border colors for panels match WordPress UI
+1ccea74 Twenty Seventeen: Fix issue with missing background color in dark color scheme.
+769e718 Twenty Seventeen: Improve user and developer experience with the customizer integration
+030bc37 Themes: Enable video in custom headers.
+7b0abd1 Accessibility: Hide the Toolbar sub-menu icons from assistive technologies.
+7a60d65 Accessibility: Remove inappropriate content from the Posts and Edit screens headings.
+4a37a04 REST API: Return `WP_Error` when a client is attempting to update an option with a non-scalar value to `null`.
+432f5e7 Accessibility: Improve the Menus post type meta boxes pagination links.
+d42acc5 REST API: Remove the Location header redirect for the /users/me endpoint.
+a6d3ba9 Customize: Add all dynamic settings for nav menus and nav menu items before previewing to ensure new entries (placeholders) will be recognized.
+e8af4e5 I18N: Apply the `locale` filter when returning early in `get_locale()`.
+62445cd Customize: Check for existence of controls and settings for background properties before attempting to access.
+1c5c130 I18N: Fix a PHP fatal when `get_locale()` is called before `$wpdb` is ready.
+f2a7e84 Share fixtures in REST API endpoint tests.
+493f76a REST API: Use `wp_get_object_terms()` when fetching terms for a post object.
+582c8a1 Customize: Remove an unused variable.
+022ee8e Customize: Remove unnecessary code for edit shortcuts which is no longer required due to moving buttons inside of partial placement containers.
+21e0f96 REST API: Add the `default_comment_status` and `default_ping_status` options to the setting endpoint.
+95720f3 TinyMCE: after chats in #core-editor and #desing on Slack, the decision is to not remove Heading 1 for beta1.
+4233a60 Twenty Seventeen: Placeholder styling
+d359ffc REST API: Remove experimental `filter` wrapper parameter from the Posts Controller class.
+71afe65 Customize: Add edit shortcuts in customizer preview to visually expose editable elements and focus on the corresponding controls when clicked.
+834b7c6 Twenty Seventeen: Implement selective refresh for site title and tagline
+6fe17e2 Administration: Better accessibility for the "Post locked" indicator.
+a6df2cc Twenty Seventeen: Fix header height on sub-pages.
+3103b1a Twenty Seventeen: Make table styles more consistent
+24ab365 Twenty Seventeen: Improve front end display in Internet Explorer 8
+7819e2b I18N: Introduce a locale-switching function.
+91b518a REST API: Use term-specific caps for permission checks in term update and delete endpoints.
+919f08f Comments: In `comment_form()`, bail early if comments for the post are closed.
+bc5c877 Administration: Standardise the docblocks for the `handle_bulk_actions-*` filters.
+d2173fd Administration: Switch to `handle_network_bulk_actions-{$screen}` for the bulk listing screen actions in the network admin area.
+6161ad9 Formatting: Don't overwrite the status header for Ajax responses that use output buffering or otherwise set their headers early.
+49c5fb8 I18N: Add `$user_id` argument to `get_user_locale()`.
+0c2a618 REST API: Add constructor to the `WP_REST_Settings_Controller` class.
+4bd5479 I18N: Allow for WordPress Plugin Directory URL in plugin details modal to be localized.
+946da2d About Page: Use `get_user_language()` for the video subtitles.
+81a26f6 Posts, Post Types: Add support for post type templates.
+a91706d Tests: Use correct arguments for `wp_newComment` XML-RPC method.
+a8e304e Media: Add support for rendering PDF thumbnails.
+a86496a Customize: Improve custom background properties UI.
+6b4357e REST API: Deprecate the `rest_enabled` filter.
+11e7d3d TinyMCE: revert removing the numbers (2-6) after the headings in the drop-down. Seems it causes more confusion.
+a91a41c Tests: Fix some query typos introduced in [38940].
+9ff54f2 General: Add a `sanitize_textarea_field()` function.
+555466a Multisite: Replace `get_blog_details()` in inline documentation.
+b13da6a REST API: Add missing sanitization callback for the `hide_empty` parameter of the Terms Controller.
+50e4ab3 Tests: Share fixtures in term endpoint tests.
+fe86e61 Menus: Add the `menu-item-home` class to the static front page item.
+ed2e427 TinyMCE: remove the numbers (2-6) after the headings in the drop-down. These are previews for the actual styling of headings in the editor.
+b4db9fb Build/Test Tools: Continue eliminating randomness in tests.
+5dda286 TinyMCE: adjust the shortcuts position and font size in the Formats drop-down to better match the shortcuts in the buttons tooltips.
+a545afb Multisite: Deprecate the `blog_details` filter.
+78fc038 Multisite: Use `get_site()` in tests where `get_blog_details()` is not tested.
+a4e98f7 Multisite: Replace `get_blog_details()` in `wp_xmlrpc_server::_multisite_getUsersBlogs()`.
+02ce8db Customize: Add explanatory note for `custom_css` control via `textarea[placeholder]` and expose any defined `input_attrs` on such `textarea` controls.
+e1ae827 TinyMCE: remove and rearrange some of the editor buttons to improve user experience.
+8d1cb30 Customize: Add hue-only mode to color picker.
+e048613 Tests: Update language files to include a `Language` header.
+1e6a12d Feeds: Don't attempt to generate RSS feeds for invalid feed URLs such as `wp-content/feed`.
+7cce73a General: Introduce a `wp_list_sort()` helper function, v2.
+d151e08 Feeds: Greatly reduce the number of dummy posts that are generated for the Atom tests, following on from [38924].
+54465a6 Customize: Fix logic inversion in determining whether a URL is previewable which prevented previewing anything but homepage.
+2f263fc Feeds: Always return a valid timestamp for the Last-Modified header of comment or post feeds.
+92dfd29 Feeds: Greatly reduce the number of dummy posts that are generated for the RSS2 tests. This speeds the tests up.
+c40eade Embeds: Realign the provider list after [38693].
+1159185 Upgrade: Realign `$_new_bundled_files` after [38921]. Built from https://develop.svn.wordpress.org/trunk@38922
+6e08d83 Upgrade: Add Twenty Seventeen to `$_new_bundled_files`.
+3db5fa6 Nav Menus: Update help text to include the two latest default themes, Twenty Sixteen and Twenty Seventeen.
+652742b Install: Update `sidebars_widgets` option for Twenty Seventeen to match its three sidebars.
+df7e537 Twenty Seventeen: Refresh color patterns for changes in style.css
+5981dd3 REST API: Adjust `test_get_items_invalid_status_param_is_discarded()` after [38911].
+8972cb7 Options: Make `$passed_default` available in remaining `default_option_{$option}` filter.
+680f14f Multisite: Replace `get_blog_details()` in `wp-includes/ms-blogs.php` with `get_site()`.
+84f2546 Multisite: Replace `get_blog_details()` in `get_active_blog_for_user()` with `get_site()`.
+4c0d82d Multisite: Introduce tests for `get_active_blog_for_user()`.
+48b12e9 Menus: Improve the HTML semantics of the "Menu Settings" section.
+e8a311e REST API: Validate posts status enum
+5f77715 Options: Add 'default' to register_setting
+67dbadd Twenty Seventeen: Display scroll down arrow when no menu
+a62d04a Tests: Fix a PHP notice introduced in [38907].
+3ce2dd4 Tests: Use a minimal theme for tests.
+30a7155 Customize: Allow page stubs to be created via `dropdown-pages` controls in the Static Front Page section.
+6a0ca39 Multisite: Replace `get_blog_details()` with `get_site()` in `is_user_member_of_blog()`.
+6e1c166 Multisite: Replace `get_blog_details()` in `ms_site_check()` with `get_site()`.
+390dc4b Multisite: Replace `get_blog_details()` in `add_user_to_blog()` with `get_site()`.
+749b480 Multisite: Replace `get_blog_details()` with `get_site()` in `get_dashboard_blog()`.
+afe9036 Customize: Prevent absent site icon `link` from outputting an empty string as `href` in customizer; use `/favicon.ico` as fallback.
+a1777db Customize: Skip attaching expansion event handlers to section containers with the `cannot-expand` class.
+0314e29 Drop the requirement for the entry points to WordPress to be parsable by PHP4.
+2b78803 Upgrade: Don't fail a core update just because `readme.html` or `license.txt` couldn't be modified.
+913926c TinyMCE: make keyboard shortcuts more discoverable by adding them to the buttons tooltips and in the Formats drop-down.
+7d24c2c Revert the `svn:ignore` changes in [38394] which was missed in the original revert.
+7ac6b18 HTTP: Call `mbstring_binary_safe_encoding()` before making a request with Requests to avoid issues with `mbstring.func_overload`.
+e8211f7 Docs: Correct a number of typos/spelling mistakes in inline comments.
+23a4550 Twenty Seventeen: Resolves the pin icon having variations
+1a7a00d TinyMCE: change the icon and tooltip for the remove link button in the inline link toolbar.
+885d1dd Customize: Harden url matching to account for varying ports and ensuring matching base pathname for allowed urls
+1129311 Customize: Fix live preview button in theme details modal so it includes target theme.
+e2c22fa Twenty Seventeen: iPad mini, iPhone 5 search form rendering issues fix
+d93636b Customize: Disable theme installation in multisite.
+5452a6a Twenty Seventeen: Fix smooth scrolling skip link
+bb91701 Twenty Seventeen: Fixes incorrect use of _x()
+2dfc3a7 General: Correct the docs for the default HTTP status code used by `wp_die()`.
+b21d1cb General: Check to see that the PHP-XML module is enabled before using XML functions.
+efaf9ba Menus: Add the `menu-item-home` class to the static front page.
+46bae02 Customize: Keep previously uploaded header images in place.
+5c555e5 Accessibility: Improve the Tags meta box accessibility.
+4e65c0c REST API: Correct a documentation typo.
+f96940f REST API: Correct a documentation typo.
+3a761ad Shortcodes: Add new `strip_shortcodes_tagnames` filter.
+8b3c960 Users: Use `self_admin_url()` for the email change confirmation link.
+dc35c19 Twenty Seventeen: Renaming of directory structure
+05e4d10 Revert [38873]: Commit does not keep file history due to deleted directory
+552b119 Twenty Seventeen: Renaming of directory structure
+85d3ca7 Twenty Seventeen: Remove whitelisting comments for PHP_Codesniffer
+5eb3ed3 Date/Time: Fix unit tests after [38804].
+8db6c6c Bundled theme: Add preconnect to fonts.gstatic.com in 2012-15 themes.
+e73ba84 Emoji: Load polyfill responsibly.
+e58856b Twenty Seventeen: Display featured image on static front page
+0794b24 Twenty Seventeen: Add theme support for customize selective refresh widgets
+222240c Twenty Seventeen: Fix spacing issue on pages with comments
+36f6079 Twenty Seventeen: Add post author comment styles
+cdce9d5 REST API: Allow comments to be created setting the user_agent parameter.
+6c85080 Revert [38859] due to an incomplete implementation.
+2e173f9 Customize: Revert part of [38859] which caused sections to get deactivated in the customizer.
+e099b4d Role/Capability: Add tests for the `exist` user capability.
+16ccab2 Role/Capability: Improve the test which asserts that a user can edit their own profile.
+f54558e General: Introduce a `wp_list_sort()` helper function.
+7d95638 Tests: Use a minimal theme for tests.
+aa3b4f9 Remove an obsolete `1 == $total` check in `paginate_links()`.
+badf092 I18N: Improve "Site Language" label for per-user language selection.
+f88c248 Themes: After [38788], further improve the update button when there's no update package.
+11a13f1 List Tables: Do not show filter button when there are no filter options available.
+4ba3929 Customize: Add sticky headers for panels and sections.
+16f0c68 Pings: Allow ping functions to accept `WP_Post` objects as well as post IDs.
+2e04d2a Tests: Prevent Twenty Seventeen from interfering with Customizer ajax tests.
+8027365 Tests: Prevent Twenty Seventeen from interfering with Customizer tests.
+82911b1 Cache API: introduce wp_cache_get_last_changed to improve DRY
+56dfed8 Build/Test Tools: Allow Minimal Builds
+8cfe297 Twenty Seventeen: Replace inline control structure to improve code readability
+89b20fc Twenty Fifteen, Twenty Seventeen: Add documentation to filters in themes.
+3dc7e8a Comments: Fix description for `reverse_top_level` argument in `wp_list_comments()`.
+bcc2666 Query: Allow the prefix used for search term exclusion to be filtered.
+2265f1a Tests: Skip `strip_invalid_text()` test for big5 charset on MariaDB.
+89544cc Tests: Fix ajax tests that fail when Twenty Seventeen is the default theme.
+bf5d081 Twenty Seventeen: Remove some whitespace accidentally introduced in [38837].
+7696a3a oEmbed: Remove the oEmbed provider unit tests.
+0e0af24 Themes: Twenty Seventeen is now the default theme.
+2ac1c4c Tests: Fix tests that don't pass when Twenty Seventeen is the default theme.
+35186cf Twenty Seventeen: Fix a PHP warning on fresh installs.
+e51531a Build: Ignore JSHint errors in Twenty Seventeen's third party libraries.
+6b46336 REST API: Fix comment option leak causing another test failure.
+6a94e72 REST API: Fix test failures.
+7fbb094 Importing Twenty Seventeen, our new default theme for 2017, set for 4.7.
+e4a7c0a REST API: Introduce the Content API endpoints.
+f5a3446 Customize: Improve the labelling of background and header images in the list mode of the media library.
+8abba71 Customize: Fix unit tests when `twentyfifteen` is `WP_DEFAULT_THEME` instead of `twentysixteen`.
+1ccd9e7 Customize: Introduce custom CSS for extending theme styles.
+ec5782b Docs: Fix typo in `in_category()` description.
+e4d7dd2 Upgrade/Install: Refresh update counts after page load.
+deda5d9 Resource Hints: Allow passing custom attributes to resource hints.
+39433ad Dashboard: Do not show 'Popular Plugin' UI if `DISALLOW_FILE_MODS` is set.
+6488651 Multisite: Replace `get_blog_details()` with `get_site()` in network admin screens.
+f2ad579 Multisite: Replace `get_blog_details()` in `wp-admin/my-sites.php` with `get_site()`.
+325c741 Multisite: Replace `get_blog_details()` in `/wp-admin/ms-delete-site.php` with `get_site()`.
+7eece8b Multisite: Replace `get_blog_details()` usage in `wpmu_delete_blog()` with `get_site()`.
+be6e984 Multisite: Replace `get_blog_details()` in `WP_Importer::set_blog()` with `get_site()`.
+4d44eea Multisite: Use correct types in `get_sites()` during network upgrade.
+432d900 Multisite: Add `$network_id` parameter to hooks in `delete_network_option()`.
+eb382b2 Multisite: Add `$network_id` parameter to hooks in `update_network_option()`.
+213a0a2 Multisite: Add $network_id parameter to hooks in `add_network_option()`.
+df6675d Multisite: Add `$network_id` parameter to filters in `get_network_option()`.
+1560fbc Multisite: Use `get_network()` and `get_current_network_id()` for current network data.
+1c3b965 Customize: Introduce a new experience for discovering, installing, and previewing themes within the customizer.
+8ed022b Media: Remove `alt` fallbacks to improve accessibility.
+e8bd964 Customize: Split out link `click.preview` and form `submit.preview` event handlers from anonymous functions into named methods on `wp.customize.Preview` for extensibility.
+f1ba191 Customize: Implement customized state persistence with changesets.
+f6d85de Charset: Allow `_canonical_charset()` to handle mixed-case strings.
+f76fa00 TinyMCE wplink: - Remove the calls to getBookmark() and moveToBookmark() in IE. This is handled automatically when blurring and focusing the editor. - When inserting a link, move it out of the caret position element. If not, it may be removed with that element on clean-up before save.
+11cb0c0 Customize: Skip triggering initial click on pages section for available nav menu items if already open.
+969e425 REST API: Include `Vary: Origin` in cors headers
+1e54943 Docs: Improve documentation for `install_plugin_install_status()`.
+ffdef38 Date/Time: Remove some legacy logic in `date_i18n()`.
+4996d05 TinyMCE: - When editing pages, add body class with the page template, or `page-template-default`. - Change the page template class when the users select another template, similarly to changing the post type class for posts.
+374a079 Role/Capability: Disregard the order of capabilities when testing that single site and multisite capability tests match.
+c388eec TinyMCE: restore the monospace font in textareas in the TinyMCE UI. Make it same as in the Text editor.
+7be7d39 Editor: Add a role `button` to the Tags meta box tag cloud links.
+8aef143 Menus: Fix the posts-categories quick search.
+4a95bfa Docs: In `get_pages()` and `wp_list_pages()`, note that `post_status` argument can also be an array.
+d91da52 Accessible Tags autocomplete: - Replace suggest.js with UI Autocomplete. - Use the same settings like in the editor link toolbar. - Abstract it and add in a new file, tags-suggest.js. Then make it a dependency for the Tags postbox(es) and Quick and Bulk Edit. - Add `data-wp-taxonomy` on all input elements to improve handling in the UI for custom taxonomies.
+e2e2258 TinyMCE: - Prevent applying Indent and Outdent while an image with a caption is selected. It doesn't do anything and breaks the caption elements. - Keep all of the text when a caption `<dl>` was somehow changed.
+da4da31 Administration: Better consistency for the Media, Add Plugins, and Add Themes toolbars.
+07b97c1 Customize: Move Pages below Custom Links in available nav menu items panel.
